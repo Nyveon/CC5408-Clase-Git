@@ -7,7 +7,7 @@
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
 		/>
 
-		<title>reveal.js</title>
+		<title>Control de Versiones</title>
 
 		<link rel="stylesheet" href="dist/reset.css" />
 		<link rel="stylesheet" href="dist/reveal.css" />
@@ -19,6 +19,8 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="static/css/helper.css" />
 		<link rel="stylesheet" href="static/css/custom.css" />
+
+		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -50,17 +52,178 @@
 				</section>
 
 				<section data-auto-animate data-section="git">
-					<img src="static/img/logo_git.svg" alt="git logo" class="r-stretch" />
-					<h1>Git</h1>
+					<div class="nv-flex nv-flex-row">
+						<img src="static/img/logo_git.svg" alt="git logo" />
+						<h1 data-id="title">Git</h1>
+					</div>
+
+					<ul>
+						<li class="fragment">Version Control System (VCS)</li>
+						<li class="fragment">Maneja código a lo largo del tiempo</li>
+						<li class="fragment">
+							Usado por desarrolladores para organizar y colaborar en proyectos
+						</li>
+					</ul>
 				</section>
 
-				<section data-auto-animate data-section="github">
-					<img
-						src="static/img/logo_git.svg"
-						alt="git logo"
-					/>
-					<h1>Git</h1>
+				<section data-auto-animate data-section="git">
+					<div class="nv-flex nv-flex-row">
+						<img src="static/img/logo_git.svg" alt="git logo" />
+						<h1 data-id="title">¿Por qué Git?</h1>
+					</div>
+
+					<h2>Y no...</h2>
+                    <ul>
+                        <li class="fragment">Cloud (Google Drive, Dropbox, etc)</li>
+                        <li class="fragment">Mandarse el .zip por WhatsApp</li>
+                        <li class="fragment">Ir turnandose el computador</li>
+                    </ul>
 				</section>
+
+				<section data-auto-animate data-section="git">
+					<div class="nv-flex nv-flex-row">
+						<img src="static/img/logo_git.svg" alt="git logo" />
+						<h1 data-id="title">¿Por qué Git?</h1>
+					</div>
+
+					<div>
+                        <div class="nv-flex nv-column">
+                        <small data-id="servidor">Servidor</small>
+						<pre class="python" data-id="code1"><code data-trim data-noescape data-line-numbers>
+                            def update_player(player, points, damage):
+                                player.score += points
+                                player.health -= damage
+                        </code></pre></div>
+					</div>
+				</section>
+
+                <section data-auto-animate data-section="git">
+					<div>
+                        <div class="nv-flex nv-column">
+                        <small data-id="servidor">Servidor</small>
+						<pre class="python" data-id="code1"><code data-trim data-noescape data-line-numbers>
+                            def update_player(player, points, damage):
+                                player.score += points
+                                player.health -= damage
+                        </code></pre></div>
+
+                        <hr data-id="hr1">
+
+                        <div class="nv-flex nv-column">
+                        <span data-id="name1"><small><i data-feather="download" class="fragment"></i> Eric</small></span>
+                        <pre class="fragment python" data-id="code2"><code data-trim data-noescape data-line-numbers>
+                            def update_player(player, points, damage):
+                                player.score += points
+                                player.health -= damage
+                        </code></pre></div>
+
+                        <hr data-id="hr2">
+
+                        <div class="nv-flex nv-column">
+                        <span data-id="name2"><small><i data-feather="download" class="fragment"></i> Elías</small></span>
+                        <pre class="fragment python"  data-id="code3"><code data-trim data-noescape data-line-numbers>
+                            def update_player(player, points, damage):
+                                player.score += points
+                                player.health -= damage
+                        </code></pre></div>
+					</div>
+                </section>
+
+                <section data-auto-animate data-section="git">
+					<div>
+                        <div class="nv-flex nv-column">
+                        <small data-id="servidor">Servidor</small>
+						<pre class="python" data-id="code1"><code data-trim data-noescape data-line-numbers>
+                            def update_player(player, points, damage):
+                                player.score += points
+                                player.health -= damage
+                        </code></pre></div>
+
+                        <hr data-id="hr1">
+
+                        <div class="nv-flex nv-column">
+                        <span data-id="name1"><small><i data-feather="edit"></i> Eric</small></span>
+                        <pre class="python" data-id="code2"><code data-trim data-noescape data-line-numbers="2|3">
+                            def update_player(player, points, damage):
+                                player.score += points - damage
+                                player.health -= damage * player.armor
+                        </code></pre></div>
+
+                        <hr data-id="hr2">
+
+                        <div class="nv-flex nv-column">
+                        <span data-id="name2"><small>Elías</small></span>
+                        <pre class="python" data-id="code3"><code data-trim data-noescape data-line-numbers>
+                            def update_player(player, points, damage):
+                                player.score += points
+                                player.health -= damage
+                        </code></pre></div>
+					</div>
+                </section>
+
+                <section data-auto-animate data-section="git">
+					<div>
+                        <div class="nv-flex nv-column">
+                        <small data-id="servidor">Servidor</small>
+						<pre class="python" data-id="code1"><code data-trim data-noescape data-line-numbers>
+                            def update_player(player, points, damage):
+                                player.score += points
+                                player.health -= damage
+                        </code></pre></div>
+
+                        <hr data-id="hr1">
+
+                        <div class="nv-flex nv-column">
+                        <span data-id="name1"><small>Eric</small></span>
+                        <pre class="python" data-id="code2"><code data-trim data-noescape data-line-numbers>
+                            def update_player(player, points, damage):
+                                player.score += points - damage
+                                player.health -= damage * player.armor
+                        </code></pre></div>
+
+                        <hr data-id="hr2">
+
+                        <div class="nv-flex nv-column">
+                        <span data-id="name2"><small><i data-feather="edit"></i> Elías</small></span>
+                        <pre class="python" data-id="code3"><code data-trim data-noescape data-line-numbers="2">
+                            def update_player(player, points, damage):
+                                player.score += points + player.bonus
+                                player.health -= damage
+                        </code></pre></div>
+					</div>
+                </section>
+
+                <section data-auto-animate data-section="git">
+					<div>
+                        <div class="nv-flex nv-column">
+                        <small data-id="servidor"><i data-feather="alert-triangle"></i> Servidor <i data-feather="alert-triangle"></i></small>
+						<pre class="python" data-id="code1"><code data-trim data-noescape data-line-numbers="3|2">
+                            def update_player(player, points, damage):
+                                player.score += points  # ⚠ ¿Que versión toma?
+                                player.health -= damage # ☑ Versión de Eric
+                        </code></pre></div>
+
+                        <hr data-id="hr1">
+
+                        <div class="nv-flex nv-column">
+                        <span data-id="name1"><small><i data-feather="upload"></i> Eric</small></span>
+                        <pre class="python" data-id="code2"><code data-trim data-noescape data-line-numbers>
+                            def update_player(player, points, damage):
+                                player.score += points - damage
+                                player.health -= damage * player.armor
+                        </code></pre></div>
+
+                        <hr data-id="hr2">
+
+                        <div class="nv-flex nv-column">
+                        <span data-id="name2"><small><i data-feather="upload"></i> Elías</small></span>
+                        <pre class="python" data-id="code3"><code data-trim data-noescape>
+                            def update_player(player, points, damage):
+                                player.score += points + player.bonus
+                                player.health -= damage
+                        </code></pre></div>
+					</div>
+                </section>
 			</div>
 		</div>
 
@@ -74,14 +237,21 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
+			let hljs = null;
+
 			Reveal.initialize({
 				hash: true,
 				controlsTutorial: true,
 				progress: true,
 				slideNumber: true,
 				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+			}).then(() => {
+				hljs = Reveal.getPlugin("highlight");
 			});
+		</script>
+		<script src="static/js/footer.js"></script>
+        <script>
+            feather.replace();
         </script>
-        <script src="static/js/footer.js"></script>
 	</body>
 </html>

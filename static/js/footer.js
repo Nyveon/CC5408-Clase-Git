@@ -2,7 +2,7 @@ const footer = document.getElementById("footer");
 const logo = document.getElementById("logo");
 
 const sectionImages = {
-    none: "static/img/no_image.svg",
+	none: "static/img/no_image.svg",
 	git: "static/img/logo_git.svg",
 	github: "static/img/logo_github.svg",
 	godot: "static/img/logo_godot.svg",
@@ -18,7 +18,7 @@ Reveal.on("slidechanged", (event) => {
 		logo.classList.remove("nv-fade-out");
 
 		setTimeout(() => {
-            logo.src = sectionImages.none;
+			logo.src = sectionImages.none;
 		}, 150);
 	} else {
 		footer.classList.remove("nv-hidden");
