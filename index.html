@@ -1,42 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
 
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/dracula.css">
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/solarized.css" id="theme" />
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" />
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="static/css/helper.css" />
+		<link rel="stylesheet" href="static/css/custom.css" />
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-hide-footer>
+					<div>
+						<img src="static/img/logo_git.svg" alt="git logo" class="nv-logo" />
+						<img
+							src="static/img/logo_github.svg"
+							alt="github logo"
+							class="nv-logo"
+						/>
+						<img
+							src="static/img/logo_godot.svg"
+							alt="godot logo"
+							class="nv-logo"
+						/>
+					</div>
+					<h2>Control de versiones</h2>
+					<p>CC5408 - Taller de Diseño y Desarrollo de Videojuegos</p>
+					<p>
+						<small
+							>Por:
+							<a href="https://github.com/Nyveon" target="_blank"
+								>Eric K.</a
+							></small
+						>
+					</p>
+				</section>
+
+				<section data-auto-animate data-section="git">
+					<img src="static/img/logo_git.svg" alt="git logo" class="r-stretch" />
+					<h1>Git</h1>
+				</section>
+
+				<section data-auto-animate data-section="github">
+					<img
+						src="static/img/logo_git.svg"
+						alt="git logo"
+					/>
+					<h1>Git</h1>
+				</section>
 			</div>
 		</div>
+
+		<footer class="nv-hidden" id="footer">
+			<img id="logo" />
+			<p>CC5408 - Taller de Diseño y Desarrollo de Videojuegos</p>
+		</footer>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-                controlsTutorial: true,
-                progress: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				controlsTutorial: true,
+				progress: true,
+				slideNumber: true,
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
 			});
-		</script>
+        </script>
+        <script src="static/js/footer.js"></script>
 	</body>
 </html>

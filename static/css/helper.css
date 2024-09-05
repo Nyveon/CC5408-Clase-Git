@@ -1,0 +1,31 @@
+.nv-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nv-column {
+    flex-direction: column;
+}
+
+.nv-row {
+    flex-direction: row;
+}
+
+.nv-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nv-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nv-fade-in {
+    opacity: 1;
+}
+
+.nv-fade-out {
+    opacity: 0;
+}
