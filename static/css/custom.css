@@ -34,3 +34,15 @@ footer > img {
 	transition: all 0.15s ease;
 	opacity: 1;
 }
+
+.tippy-content {
+    font-family: var(--r-main-font);
+    color: var(--r-main-color);
+    font-size: 2rem;
+}
+
+.tippy-content code {
+    font-family: var(--r-code-font);
+    color: var(--r-code-color);
+    font-size: 1.5rem;
+}

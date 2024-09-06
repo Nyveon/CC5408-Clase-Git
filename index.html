@@ -21,8 +21,17 @@
 		<link rel="stylesheet" href="static/css/custom.css" />
 		<link rel="stylesheet" href="static/css/git-diagram.css" />
 
+		<!-- External -->
 		<script src="https://unpkg.com/feather-icons"></script>
 		<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/loadcontent/plugin.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/tippy.js@6/themes/light-border.css"
+		/>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/tippy.js@6/animations/scale.css"
+        />
 	</head>
 	<body>
 		<div class="reveal">
@@ -320,6 +329,17 @@
 					</ul>
 				</section>
 
+                <section data-section="git">
+                    <h2>Terminología</h2>
+                    <ul>
+                        <li class="fragment"><strong>Repositorio:</strong> Lugar donde se guarda el historial completo de un proyecto</li>
+                        <li class="fragment"><strong>Commit:</strong> Registro de cambios en el proyecto</li>
+                        <li class="fragment"><strong>Branch:</strong> Secuencia separada de commits. Permite trabajar en paralelo</li>
+                        <li class="fragment"><strong>Main:</strong> La rama principal de un proyecto. Antes conocida como master</li>
+                        <li class="fragment"><strong>Merge:</strong> Combina cambios de una rama en otra para integrar trabajo paralelo</li>
+                    </ul>
+                </section>
+
 				<section data-section="git">
 					<div data-load="static/html/git-diagram.html"></div>
 				</section>
@@ -331,6 +351,8 @@
 			<p>CC5408 - Taller de Diseño y Desarrollo de Videojuegos</p>
 		</footer>
 
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://unpkg.com/tippy.js@6"></script>
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
@@ -357,6 +379,6 @@
 		<script>
 			feather.replace();
 		</script>
-        <script defer src="static/js/git-diagram.js"></script>
+		<script src="static/js/git-diagram.js"></script>
 	</body>
 </html>

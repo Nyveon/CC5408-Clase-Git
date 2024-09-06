@@ -61,36 +61,50 @@ function positionArrowBetweenElements(startElem, endElem, arrowElem) {
 }
 
 const arrows = [
-    "git-add",
-    "git-commit",
-    "git-push",
-    "git-fetch",
-    "git-pull",
-    "git-checkout",
-    "git-merge-local",
-    "git-merge-origin",
+	"git-add",
+	"git-commit",
+	"git-push",
+	"git-fetch",
+	"git-pull",
+	"git-checkout",
+	"git-merge-local",
+	"git-merge-origin",
 ];
 
 function updateArrows() {
-    // Update arrows for each arrow element
-    arrows.forEach(function (arrowName) {
-        const arrow = document.getElementById(arrowName);
-        const arrowStart = document.getElementById(arrowName + "-start");
-        const arrowEnd = document.getElementById(arrowName + "-end");
+	// Update arrows for each arrow element
+	arrows.forEach(function (arrowName) {
+		const arrow = document.getElementById(arrowName);
+		const arrowStart = document.getElementById(arrowName + "-start");
+		const arrowEnd = document.getElementById(arrowName + "-end");
 
-        positionArrowBetweenElements(arrowStart, arrowEnd, arrow);
-    });
+		positionArrowBetweenElements(arrowStart, arrowEnd, arrow);
+	});
 }
 
 // Recalculate the arrows' positions when the window is resized or scrolled
-window.addEventListener("resize", updateArrows);
-window.addEventListener("scroll", updateArrows);
+// window.addEventListener("resize", updateArrows);
+// window.addEventListener("scroll", updateArrows);
 
 // Initial positioning of the arrows
-window.addEventListener("load", updateArrows);
+// window.addEventListener("DOMContentLoaded", updateArrows);
 
-Reveal.on('slidechanged', (event) => {
-    updateArrows(arrows);
+let firstLoad = true;
+
+Reveal.on("slidechanged", (event) => {
+	updateArrows(arrows);
+	if (firstLoad) {
+		window.addEventListener("scroll", updateArrows);
+		window.addEventListener("resize", updateArrows);
+
+		tippy("[data-tippy-content]", {
+			theme: "light-border",
+			animation: "scale",
+			allowHTML: true,
+			placement: "bottom",
+            delay: 0,
+		});
+
+		firstLoad = false;
+	}
 });
-
-

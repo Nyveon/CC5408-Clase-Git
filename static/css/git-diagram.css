@@ -86,6 +86,12 @@
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 	margin-bottom: 1rem;
 	border: 1px solid #e1e4e8;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.git-box:hover {
+    background-color: #a0d5d5;
 }
 
 .git-column > div:not(.git-box) {
@@ -114,15 +120,15 @@
 
 /* Arrow hover effect */
 .arrow:hover {
-	background-color: #004bb5;
+	background-color: #17868a;
 }
 
 .arrow:hover::after {
-	border-color: transparent transparent transparent #004bb5; /* Arrowhead matches body color on hover */
+	border-color: transparent transparent transparent #17868a; /* Arrowhead matches body color on hover */
 }
 
 .left-arrow:hover::after {
-	border-color: transparent #004bb5 transparent transparent; /* Arrowhead matches body color on hover */
+	border-color: transparent #17868a transparent transparent; /* Arrowhead matches body color on hover */
 }
 
 /* Right-facing arrow with less curve on the left (non-pointy) side */
