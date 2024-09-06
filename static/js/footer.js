@@ -26,17 +26,21 @@ Reveal.on("slidechanged", (event) => {
 		const section = slide.getAttribute("data-section");
 		if (section) {
 			const footerImage = sectionImages[section];
+            const footerImageFilename = footerImage.split('/').pop();
+            const logoSrcFilename = logo.src.split('/').pop();
 
-			logo.classList.add("nv-fade-out");
+            if (footerImageFilename != logoSrcFilename) {
 
-			setTimeout(() => {
-				logo.src = footerImage;
+                logo.classList.add("nv-fade-out");
+                setTimeout(() => {
+                    logo.src = footerImage;
 
-				logo.onload = () => {
-					logo.classList.remove("nv-fade-out");
-					logo.classList.add("nv-fade-in");
-				};
-			}, 150);
+                    logo.onload = () => {
+                        logo.classList.remove("nv-fade-out");
+                        logo.classList.add("nv-fade-in");
+                    };
+                }, 150);
+            }
 		} else {
 			logo.src = "";
 		}
