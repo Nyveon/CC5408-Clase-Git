@@ -28,10 +28,10 @@
 			rel="stylesheet"
 			href="https://unpkg.com/tippy.js@6/themes/light-border.css"
 		/>
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/tippy.js@6/animations/scale.css"
-        />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/tippy.js@6/animations/scale.css"
+		/>
 	</head>
 	<body>
 		<div class="reveal">
@@ -329,122 +329,378 @@
 					</ul>
 				</section>
 
-                <section data-section="git">
-                    <h2>Terminología</h2>
-                    <ul>
-                        <li class="fragment"><strong>Repositorio:</strong> Lugar donde se guarda el historial completo de un proyecto</li>
-                        <li class="fragment"><strong>Commit:</strong> Registro de cambios en el proyecto</li>
-                        <li class="fragment"><strong>Branch:</strong> Secuencia separada de commits. Permite trabajar en paralelo</li>
-                        <li class="fragment"><strong>Main:</strong> La rama principal de un proyecto. Antes conocida como master</li>
-                        <li class="fragment"><strong>Merge:</strong> Combina cambios de una rama en otra para integrar trabajo paralelo</li>
-                    </ul>
-                </section>
+				<section data-section="git">
+					<h2>Terminología</h2>
+					<ul>
+						<li class="fragment">
+							<strong>Repositorio:</strong> Lugar donde se guarda el historial
+							completo de un proyecto
+						</li>
+						<li class="fragment">
+							<strong>Commit:</strong> Registro de cambios en el proyecto
+						</li>
+						<li class="fragment">
+							<strong>Branch:</strong> Secuencia separada de commits. Permite
+							trabajar en paralelo
+						</li>
+						<li class="fragment">
+							<strong>Main:</strong> La rama principal de un proyecto. Antes
+							conocida como master
+						</li>
+						<li class="fragment">
+							<strong>Merge:</strong> Combina cambios de una rama en otra para
+							integrar trabajo paralelo
+						</li>
+					</ul>
+				</section>
 
 				<section data-section="git">
 					<div data-load="static/html/git-diagram.html"></div>
 				</section>
 
-                <section data-section="git" data-auto-animate><h2>Branches</h2>
-                    <img data-id="branches" src="static/img/branches_0.svg" alt="branches" style="width: 100%;" />
-                </section>
-
-                <section data-section="git" data-auto-animate><h2>Branches</h2>
-                    <img data-id="branches" src="static/img/branches_1.svg" alt="branches" style="width: 100%;" />
-                </section>
-
-                <section data-section="git" data-auto-animate><h2>Branches</h2>
-                    <img data-id="branches" src="static/img/branches_2.svg" alt="branches" style="width: 100%;" />
-                </section>
-
-                <section data-section="git" data-auto-animate><h2>Branches</h2>
-                    <img data-id="branches" src="static/img/branches_3.svg" alt="branches" style="width: 100%;" />
-                </section>
-
-                <section data-section="git" data-auto-animate><h2>Branches</h2>
-                    <img data-id="branches" src="static/img/branches_4.svg" alt="branches" style="width: 100%;" />
-                </section>
-
-                <section data-section="git" data-auto-animate><h2>Branches</h2>
-                    <img data-id="branches" src="static/img/branches_5.svg" alt="branches" style="width: 100%;" />
-                </section>
-
-                <section data-section="git" data-auto-animate><h2>Branches</h2>
-                    <img data-id="branches" src="static/img/branches_6.svg" alt="branches" style="width: 100%;" />
-                </section>
-
-                <section data-section="git" data-auto-animate><h2>Branches</h2>
-                    <img data-id="branches" src="static/img/branches_7.svg" alt="branches" style="width: 100%;" />
-                </section>
-
-                <section data-section="git" data-auto-animate><h2>Branches</h2>
-                    <img data-id="branches" src="static/img/branches_8.svg" alt="branches" style="width: 100%;" />
-                </section>
-
-                <section data-section="git"><h2>Conflictos</h2> Throwback to previous section</section>
-
                 <section data-section="git">
-                    <h2>Instalando Git</h2>
+                    <h1>Resumen general</h1>
+
                     <ol>
-                        <li class="fragment"><a href="git-scm.com"><i data-feather="download"></i> Descargar & instalar Git</a></li>
-                        <li class="fragment">Correr: <pre><code>git --version</code></pre></li>
-                        <li class="fragment">Configurar: <pre><code>git config --global user.name "Tu Nombre"
-git config --global user.email "Tu Correo"</code></pre></li>
-                        <li class="fragment"><em>Nota: los commits muestran tu correo. Recomiendo usar <a href="https://github.com/settings/emails">el correo generado por github</a></em></li>
+                        <li class="fragment"><code>git pull</code> para actualizarte</li>
+                        <li class="fragment"><code>git log</code> para ver los últimos commits</li>
+                        <li class="fragment"><em>Haces tus cambios en Godot</em></li>
+                        <li class="fragment"><code>git status</code> para ver el estado de tu W.D.</li>
+                        <li class="fragment"><code>git add .</code> para preparar tus cambios</li>
+                        <li class="fragment"><code>git commit -m 'mensaje descriptivo'</code></li>
+                        <li class="fragment"><code>git push</code> para subir tus cambios</li>
                     </ol>
                 </section>
 
-                <section data-section="github">
-                    <div class="nv-flex nv-flex-row">
-						<img src="static/img/logo_github.svg" alt="github logo" class="nv-logo" style="margin-right: 1.5rem;" />
+				<section data-section="git" data-auto-animate>
+					<h2>Branches</h2>
+					<img
+						data-id="branches"
+						src="static/img/branches_0.svg"
+						alt="branches"
+						style="width: 100%"
+					/>
+				</section>
+
+				<section data-section="git" data-auto-animate>
+					<h2>Branches</h2>
+					<img
+						data-id="branches"
+						src="static/img/branches_1.svg"
+						alt="branches"
+						style="width: 100%"
+					/>
+				</section>
+
+				<section data-section="git" data-auto-animate>
+					<h2>Branches</h2>
+					<img
+						data-id="branches"
+						src="static/img/branches_2.svg"
+						alt="branches"
+						style="width: 100%"
+					/>
+				</section>
+
+				<section data-section="git" data-auto-animate>
+					<h2>Branches</h2>
+					<img
+						data-id="branches"
+						src="static/img/branches_3.svg"
+						alt="branches"
+						style="width: 100%"
+					/>
+				</section>
+
+				<section data-section="git" data-auto-animate>
+					<h2>Branches</h2>
+					<img
+						data-id="branches"
+						src="static/img/branches_4.svg"
+						alt="branches"
+						style="width: 100%"
+					/>
+				</section>
+
+				<section data-section="git" data-auto-animate>
+					<h2>Branches</h2>
+					<img
+						data-id="branches"
+						src="static/img/branches_5.svg"
+						alt="branches"
+						style="width: 100%"
+					/>
+				</section>
+
+				<section data-section="git" data-auto-animate>
+					<h2>Branches</h2>
+					<img
+						data-id="branches"
+						src="static/img/branches_6.svg"
+						alt="branches"
+						style="width: 100%"
+					/>
+				</section>
+
+				<section data-section="git" data-auto-animate>
+					<h2>Branches</h2>
+					<img
+						data-id="branches"
+						src="static/img/branches_7.svg"
+						alt="branches"
+						style="width: 100%"
+					/>
+				</section>
+
+				<section data-section="git" data-auto-animate>
+					<h2>Branches</h2>
+					<img
+						data-id="branches"
+						src="static/img/branches_8.svg"
+						alt="branches"
+						style="width: 100%"
+					/>
+				</section>
+
+				<section data-auto-animate data-section="git">
+					<h2>Conflictos</h2>
+
+					<div>
+						<div class="nv-flex nv-column">
+							<span data-id="name1"
+								><small><i data-feather="circle"></i> Eric/Server</small></span
+							>
+							<pre
+								class="python"
+								data-id="code2"
+							><code data-trim data-noescape data-line-numbers>
+                        def update_player(player, points, damage):
+                            player.score += points - damage
+                            player.health -= damage * player.armor
+                    </code></pre>
+						</div>
+
+						<hr data-id="hr2" />
+
+						<div class="nv-flex nv-column">
+							<span data-id="name2"
+								><small><i data-feather="upload"></i> Elías</small></span
+							>
+							<pre class="python" data-id="codex"><code data-trim data-noescape>
+                        def update_player(player, points, damage):
+                            player.score += points + player.bonus
+                            player.health -= damage
+                    </code></pre>
+						</div>
+					</div>
+				</section>
+
+				<section data-auto-animate data-section="git">
+					<pre class="python" data-id="codex"><code data-trim data-noescape>
+                        <<<<<<< HEAD
+                        def update_player(player, points, damage):
+                            player.score += points - damage
+                            player.health -= damage * player.armor
+                        =======
+                        def update_player(player, points, damage):
+                            player.score += points + player.bonus
+                            player.health -= damage
+                        >>>>>>> elias-branch
+                    </code></pre>
+				</section>
+
+				<section data-auto-animate data-section="git">
+					<pre class="python" data-id="codex"><code data-trim data-noescape>
+                        <<<<<<< HEAD
+                        def update_player(player, points, damage):
+                            player.score += points - damage
+                            player.health -= damage * player.armor
+                        =======
+                        def update_player(player, points, damage):
+                            player.score += points + player.bonus
+                        >>>>>>> elias-branch
+                    </code></pre>
+				</section>
+
+				<section data-auto-animate data-section="git">
+					<pre class="python" data-id="codex"><code data-trim data-noescape>
+                        <<<<<<< HEAD
+                        def update_player(player, points, damage):
+                            player.score += points - damage
+                            player.health -= damage * player.armor
+                        =======
+                            player.score += points + player.bonus
+                        >>>>>>> elias-branch
+                    </code></pre>
+				</section>
+
+				<section data-auto-animate data-section="git">
+					<pre class="python" data-id="codex"><code data-trim data-noescape>
+                        <<<<<<< HEAD
+                        def update_player(player, points, damage):
+                            player.score += points - damage + player.bonus
+                            player.health -= damage * player.armor
+                        >>>>>>> elias-branch
+                    </code></pre>
+				</section>
+
+				<section data-auto-animate data-section="git">
+					<pre class="python" data-id="codex"><code data-trim data-noescape>
+                        def update_player(player, points, damage):
+                            player.score += points - damage + player.bonus
+                            player.health -= damage * player.armor
+                    </code></pre>
+				</section>
+
+				<section data-section="git">
+					<h2>Instalando Git</h2>
+					<ol>
+						<li class="fragment">
+							<a href="git-scm.com"
+								><i data-feather="download"></i> Descargar & instalar Git</a
+							>
+						</li>
+						<li class="fragment">
+							Correr:
+							<pre><code>git --version</code></pre>
+						</li>
+						<li class="fragment">
+							Configurar:
+							<pre><code>git config --global user.name "Tu Nombre"
+git config --global user.email "Tu Correo"</code></pre>
+						</li>
+						<li class="fragment">
+							<em
+								>Nota: los commits muestran tu correo. Recomiendo usar
+								<a href="https://github.com/settings/emails"
+									>el correo generado por github</a
+								></em
+							>
+						</li>
+					</ol>
+				</section>
+
+				<section data-section="github">
+					<div class="nv-flex nv-flex-row">
+						<img
+							src="static/img/logo_github.svg"
+							alt="github logo"
+							class="nv-logo"
+							style="margin-right: 1.5rem"
+						/>
 						<h1 data-id="title">Github</h1>
 					</div>
 
-                    <p class="fragment">Una plataforma (gratis) para alojar repositorios Git de forma remota, que facilita la colaboración, gestión de proyectos y control de versiones.</p>
-                </section>
+					<p class="fragment">
+						Una plataforma (gratis) para alojar repositorios Git de forma
+						remota, que facilita la colaboración, gestión de proyectos y control
+						de versiones.
+					</p>
+				</section>
 
-                <section data-section="github">
-                    <h2>Autorizando Git con Github</h2>
-                    <ol>
-                        <li class="fragment"><a href="github.com"><i data-feather="log-in"></i> Crear cuenta en Github</a></li>
-                        <li class="fragment"><a href="https://cli.github.com/"><i data-feather="download"></i> Instalar Github CLI</a></li>
-                        <li class="fragment">Correr: <pre><code>gh auth</code></pre></li>
-                    </ol>
-                    <p class="fragment"><em>Existen <a href="https://docs.github.com/en/get-started/getting-started-with-git/set-up-git">otras formas</a> también</em></p>
-                </section>
+				<section data-section="github">
+					<h2>Autorizando Git con Github</h2>
+					<ol>
+						<li class="fragment">
+							<a href="github.com"
+								><i data-feather="log-in"></i> Crear cuenta en Github</a
+							>
+						</li>
+						<li class="fragment">
+							<a href="https://cli.github.com/"
+								><i data-feather="download"></i> Instalar Github CLI</a
+							>
+						</li>
+						<li class="fragment">
+							Correr:
+							<pre><code>gh auth</code></pre>
+						</li>
+					</ol>
+					<p class="fragment">
+						<em
+							>Existen
+							<a
+								href="https://docs.github.com/en/get-started/getting-started-with-git/set-up-git"
+								>otras formas</a
+							>
+							también</em
+						>
+					</p>
+				</section>
 
-                <section data-section="github">
-                    <h2>Creando un repositorio</h2>
-                    <ol>
-                        <li class="fragment"><a href="github.com/new"><i data-feather="book"></i> Crear repositorio en Github</a></li>
-                        <li  class="fragment">En la carpeta un nivel arriba de donde quieres que esté tu proyecto: <pre><code>git clone https://github.com/[usuario]/[repositorio].git</code></pre></li>
-                    </ol>
-                </section>
+				<section data-section="github">
+					<h2>Creando un repositorio</h2>
+					<ol>
+						<li class="fragment">
+							<a href="github.com/new"
+								><i data-feather="book"></i> Crear repositorio en Github</a
+							>
+						</li>
+						<li class="fragment">
+							En la carpeta un nivel arriba de donde quieres que esté tu
+							proyecto:
+							<pre><code>git clone https://github.com/[usuario]/[repositorio].git</code></pre>
+						</li>
+					</ol>
+				</section>
 
-                <section data-section="github">
-                    <h2>Agregando a tus compañerxs</h2>
-                    <ol>
-                        <li class="fragment">Página del repositorio</li>
-                        <li class="fragment"><i data-feather="settings"></i> Settings</li>
-                        <li class="fragment"><i data-feather="users"></i> Collaborators</li>
-                        <li class="fragment">Add people</li>
-                    </ol>
-                </section>
+				<section data-section="github">
+					<h2>Agregando a tus compañerxs</h2>
+					<ol>
+						<li class="fragment">Página del repositorio</li>
+						<li class="fragment"><i data-feather="settings"></i> Settings</li>
+						<li class="fragment"><i data-feather="users"></i> Collaborators</li>
+						<li class="fragment">Add people</li>
+					</ol>
+				</section>
 
-                <section data-section="godot">
-                    <div class="nv-flex nv-flex-row">
-						<img src="static/img/logo_godot.svg" alt="godot logo" class="nv-logo" />
+				<section data-section="godot">
+					<div class="nv-flex nv-flex-row">
+						<img
+							src="static/img/logo_godot.svg"
+							alt="godot logo"
+							class="nv-logo"
+						/>
 						<h1 data-id="title">Godot</h1>
 					</div>
 
-                    <ul>
-                        <li class="fragment">Siempre hagan pull antes de comenzar a trabajar</li>
-                        <li class="fragment">Godot reclamará si hacen pull mientras está abierto</li>
-                        <li class="fragment">Si tienen conflictos, no avancen en el proceso. Detenganse a resolverlos!</li>
-                        <li class="fragment">Hagan un archivo <code>.gitattributes</code> y escriban <pre><code>* text=auto eol=lf</code></pre></li>
-                    </ul>
-                </section>
+					<ul>
+						<li class="fragment">
+							Siempre hagan pull antes de comenzar a trabajar
+						</li>
+						<li class="fragment">
+							Godot reclamará si hacen pull mientras está abierto
+						</li>
+						<li class="fragment">
+							Si tienen conflictos, no avancen en el proceso. Detenganse a
+							resolverlos!
+						</li>
+						<li class="fragment">
+							Hagan un archivo <code>.gitattributes</code> y escriban
+							<pre><code>* text=auto eol=lf</code></pre>
+						</li>
+					</ul>
+				</section>
 
-                <section data-hide-footer><h1>Preguntas</h1></section>
+				<section data-hide-footer><h1>Preguntas</h1></section>
+
+				<section data-section="gitkraken">
+					<div class="nv-flex nv-flex-row">
+						<img
+							src="static/img/logo_gitkraken.svg"
+							alt="gitkraken logo"
+							class="nv-logo"
+                            style="margin-right: 2rem;"
+						/>
+						<h2 data-id="title">Bonus (Gitkraken)</h2>
+					</div>
+
+                    <ol>
+                        <li class="fragment"><a href="https://education.github.com/pack.Students">Github Education - Student Developer Pack</a></li>
+                        <li class="fragment"><a href="https://www.gitkraken.com/">Descargar Gitkraken</a></li>
+                        <li class="fragment">Profit</li>
+                    </ol>
+				</section>
 			</div>
 		</div>
 
