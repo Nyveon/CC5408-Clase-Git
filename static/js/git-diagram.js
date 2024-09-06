@@ -60,34 +60,37 @@ function positionArrowBetweenElements(startElem, endElem, arrowElem) {
 	}
 }
 
-function setupArrows(arrows) {
-	function updateArrows() {
-		// Update arrows for each arrow element
-		arrows.forEach(function (arrowName) {
-			const arrow = document.getElementById(arrowName);
-			const arrowStart = document.getElementById(arrowName + "-start");
-			const arrowEnd = document.getElementById(arrowName + "-end");
+const arrows = [
+    "git-add",
+    "git-commit",
+    "git-push",
+    "git-fetch",
+    "git-pull",
+    "git-checkout",
+    "git-merge-local",
+    "git-merge-origin",
+];
 
-			positionArrowBetweenElements(arrowStart, arrowEnd, arrow);
-		});
-	}
+function updateArrows() {
+    // Update arrows for each arrow element
+    arrows.forEach(function (arrowName) {
+        const arrow = document.getElementById(arrowName);
+        const arrowStart = document.getElementById(arrowName + "-start");
+        const arrowEnd = document.getElementById(arrowName + "-end");
 
-	// Recalculate the arrows' positions when the window is resized or scrolled
-	window.addEventListener("resize", updateArrows);
-	window.addEventListener("scroll", updateArrows);
-
-	// Initial positioning of the arrows
-	window.addEventListener("load", updateArrows);
+        positionArrowBetweenElements(arrowStart, arrowEnd, arrow);
+    });
 }
 
-// Example usage: Set up multiple arrows between element pairs
-setupArrows([
-	"git-add",
-	"git-commit",
-	"git-push",
-	"git-fetch",
-	"git-pull",
-	"git-checkout",
-	"git-merge-local",
-	"git-merge-origin",
-]);
+// Recalculate the arrows' positions when the window is resized or scrolled
+window.addEventListener("resize", updateArrows);
+window.addEventListener("scroll", updateArrows);
+
+// Initial positioning of the arrows
+window.addEventListener("load", updateArrows);
+
+Reveal.on('slidechanged', (event) => {
+    updateArrows(arrows);
+});
+
+
