@@ -34,13 +34,3 @@ footer > img {
 	transition: all 0.15s ease;
 	opacity: 1;
 }
-
-.reveal small {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.reveal small svg {
-    margin-right: 0.5rem;
-}

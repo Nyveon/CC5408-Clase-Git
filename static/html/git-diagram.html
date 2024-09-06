@@ -1,0 +1,81 @@
+<div id="#git-diagram">
+	<span class="git-title">Git Workflow</span>
+
+	<div id="git-inner-diagram">
+		<div id="git-local" class="git-container">
+			<span class="git-subtitle">Local Repo</span>
+			<div class="git-inner-container">
+				<div class="git-column">
+					<div class="git-box">Working Tree</div>
+					<div id="git-pull-end"></div>
+					<div id="git-add-start"></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div id="git-merge-origin-end"></div>
+					<div id="git-checkout-end"></div>
+					<div id="git-merge-local-end"></div>
+				</div>
+				<div class="git-column">
+					<div class="git-box">Staging Area</div>
+					<div></div>
+					<div id="git-add-end"></div>
+					<div id="git-commit-start"></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div class="git-column">
+					<div class="git-box">Local Branch</div>
+					<div></div>
+					<div></div>
+					<div id="git-commit-end"></div>
+					<div id="git-push-start"></div>
+					<div></div>
+					<div></div>
+					<div id="git-checkout-start"></div>
+					<div id="git-merge-local-start"></div>
+				</div>
+				<div class="git-column">
+					<div class="git-box">Remote-Tracking Ref.</div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div id="git-fetch-end"></div>
+					<div id="git-merge-origin-start"></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="git-remote" class="git-container">
+			<span class="git-subtitle">Remote Repo</span>
+			<div class="git-inner-container">
+				<div class="git-column">
+					<div class="git-box">Remote branch</div>
+					<div id="git-pull-start"></div>
+					<div></div>
+					<div></div>
+					<div id="git-push-end"></div>
+					<div id="git-fetch-start"></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="git-add" class="arrow">git add</div>
+	<div id="git-commit" class="arrow">git commit</div>
+	<div id="git-push" class="arrow">git push</div>
+	<div id="git-fetch" class="arrow">git fetch</div>
+	<div id="git-pull" class="arrow">git pull</div>
+	<div id="git-checkout" class="arrow">git checkout</div>
+	<div id="git-merge-local" class="arrow">git merge/rebase *</div>
+	<div id="git-merge-origin" class="arrow">git merge/rebase origin/*</div>
+</div>

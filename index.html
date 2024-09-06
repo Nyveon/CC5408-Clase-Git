@@ -19,6 +19,7 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="static/css/helper.css" />
 		<link rel="stylesheet" href="static/css/custom.css" />
+		<link rel="stylesheet" href="static/css/git-diagram.css" />
 
 		<script src="https://unpkg.com/feather-icons"></script>
 		<script src="https://cdn.jsdelivr.net/npm/reveal.js-plugins@latest/loadcontent/plugin.js"></script>
@@ -269,7 +270,7 @@
 								data-id="code1"
 							><code data-trim data-noescape data-line-numbers="3|2">
                             def update_player(player, points, damage):
-                                player.score += points  # ⚠ ¿Que versión toma?
+                                player.score += points  # ⚠ ¿Que versión toma? (Conflicto)
                                 player.health -= damage # ☑ Versión de Eric
                         </code></pre>
 						</div>
@@ -309,7 +310,7 @@
 					<h2>Git te permite:</h2>
 
 					<ul>
-						<li class="fragment">Respladar tu proyecto remotamente</li>
+						<li class="fragment">Respaldar tu proyecto remotamente</li>
 						<li class="fragment">Tener un historial de cambios</li>
 						<li class="fragment">
 							Revertir cambios y volver a estado anteriores
@@ -320,7 +321,7 @@
 				</section>
 
 				<section data-section="git">
-					<div data-load="test.html"></div>
+					<div data-load="static/html/git-diagram.html"></div>
 				</section>
 			</div>
 		</div>
@@ -356,5 +357,6 @@
 		<script>
 			feather.replace();
 		</script>
+        <script src="static/js/git-diagram.js"></script>
 	</body>
 </html>
